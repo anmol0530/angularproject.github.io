@@ -1,0 +1,374 @@
+
+<html lang="en" >
+   <head>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+      
+          
+       <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="animate.css"> 
+      <script type="text/javascript">    
+         angular.module('LokalTantra', ['ngMaterial','ngAnimate']);
+      </script>
+   </head>
+   <body ng-app="LokalTantra" ng-cloak style="overflow-x:hidden;">
+     
+
+<div ng-controller="Header"  class="header" ng-cloak>
+<header>
+  <md-toolbar style="background-color:#fff">
+    <nav class="navbar" style="padding-left:7%">
+      <ul class="nav navbar-nav navbar-left">
+        <h1 class="md-display-1" style="color : #039be5; font-weight: 600; margin-top:6%">LokalTantra</h1>
+     </ul>
+     <ul class="nav navbar-nav navbar-right">
+      <li>
+        <button type="button" class="md-button navBtntext" onclick="" style="color:#039be5">HOME</button>
+     </li>
+     <li>
+       <button type="button" class="md-button navBtntext" onclick="" style="color:#039be5">ABOUT</button>
+     </li>
+     <li>
+       <button type="button" class="md-button navBtntext" onclick="" style="color:#039be5">CONTACT US</button>
+    </li>
+    <li>
+       <button type="button" class="md-button navBtntext" data-toggle="modal" data-target="#Login" onclick="" style="color:#039be5">LOG IN</button>
+    </li>
+    </ul>
+  </nav>
+  </md-toolbar>
+</header>
+
+
+      <div class="container-fluid" >
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 img-holder divMainImg">
+              <img class="imgMainImg" src="main2.jpg" style="padding-top:0%"></img>
+              <md-button class="getStarted" data-toggle="modal" data-target="#Login" style="color:#015d89;border:1px solid #015d89;">Get Started</md-button>
+          </div>
+        </div>
+        <!--Login Modal begins-->
+                               <div class="modal fade" id="Login" role="dialog" >
+                                    <div class="modal-dialog">
+                                      <div class="modal-content"    style="width:113%" >
+                                        <div class="modal-header">
+                                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                           <div class="modal-title md-display-2" style="color:#039be5">Login</div>
+                                        </div>
+                                      <div class="modal-body">
+                                       <div class="row">
+                                         <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                                            <form role="form" class="form-horizontal">
+                                              <div class="form-group">
+                                                  <label for="email" class="col-sm-2 control-label">Email</label>
+                                                <div class="col-sm-10">
+                                                  <input type="email" class="form-control" id="email1" placeholder="Email" />
+                                                </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label for="exampleInputPassword1" class="col-sm-2 control-label">Password</label>
+                                                <div class="col-sm-10">
+                                                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                                                </div>
+                                              </div>
+                                            <div class="row">
+                                            <div class="col-sm-2"></div>
+                                            <div class="col-sm-10">
+                                              <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                                              <a href="javascript:;">Forgot your password?</a>
+                                            </div>
+                                            </div>
+                                            </form>
+                                            <div id="OR" class="hidden-xs">
+                                                OR</div>
+                                          </div>
+                                      <div class="col-md-4">
+                                        <div class="row text-center sign-with">
+                                          <div class="col-md-12">
+                                            <h3>Sign in with</h3>
+                                          </div>
+                                          <div class="col-md-12">
+                                               <div class="btn-group btn-group-justified">
+                                                 <a href="#" class="btn btn-primary">Facebook</a> 
+                                                 <a href="#" class="btn btn-danger">Google</a>
+                                               </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--Login Modal ends-->
+                       </div>
+        <div class="row" style="padding-top:10px">
+
+            <div class=" img-holder" style="margin-top:50px;margin-bottom:50px;text-align:center">
+               <div><img class="imgWorldImg" src="world.jpg">
+               <div class="md-headline child1">Your Platform for Complaints</div>
+               <div class="md-subhead child2">30000 complaints, 4500 users, 456 counsellors!</div>
+               </div>
+            </div>
+
+        
+        </div>
+
+        <div class="row"  style="position:relative"> 
+            <img src="road.jpg" style="width:100%;opacity:0.55">
+              <div class="topondiv">
+                <div style="width:98%;margin:auto;margin-top:21px;">
+                <div class="topondivtext" style="width:98%;margin:auto;">
+                   Lokaltantra is a social platform where you can report
+                </div>
+                <div class="topondivtext" style="width:95%;margin:auto;">
+                   your complaints to municipal counsellors
+                </div>
+                <div class="topondivtext" style="width:75%;margin:auto;margin-bottom:21px;">
+                   of your area
+                </div>
+              </div>
+             </div>
+        </div>
+
+        <div class="row" style="padding-top:10px; margin-top:190px">
+          <div class="col-sm-2 col-md-2 col-lg-2">
+            
+          </div>
+          <div class="col-sm-8 col-md-8 col-lg-8" >
+            <div class="md-headline divHeading" style="margin-bottom:0%">Recent complaints</div>
+            <div ng-controller="RightPaginationCtrl">
+            <md-grid-list md-cols="3" md-row-height="400px" md-gutter="20px">
+              
+               <md-grid-tile class="divGridTile item" ng-repeat="item in pagedItems" >
+                <div layout="column" layout-fill class="img-holder" >
+
+
+                   
+                     <img ng-src="{{item.face}}" alt="{{item.name}}" class="md-card-image imgRecentList">
+                       <md-card-title>
+                         <md-card-title-text>
+                       <div class="md-headline" style="margin:4% 4% 4% 4%; font-size:90% ">{{item.headline}}</div>
+                       
+                       <div class="md-subhead location" style="font-size:75%;display:inline-block;top:91%">
+                         <i class="material-icons " style="color:red ;">location_on</i>
+                         <span>{{item.location}}</span>
+                         </div>
+                        
+                         </md-card-title-text>
+                       </md-card-title>
+
+                    
+                </div>
+               </md-grid-tile>
+            
+            </md-grid-list>
+                 <a>
+                   <i class="material-icons" ng-click="loadMore()" style="margin-left:104%;margin-top:-20%">keyboard_arrow_right</i>
+                </a>
+                
+              </div>
+
+              
+          </div>
+          <div class="col-sm-2 col-md-2 col-lg-2">
+           
+          </div>
+
+        </div>
+
+        <div class="row" style="padding-top:50px;margin-top:80px">
+          <div class="col-sm-12 col-md-12 col-lg-12 back divColTagline">
+            <div class="md-display-1 divTagline">Complaints become solutions</div>
+            <div class="md-caption-1 divCaption1" style="margin-top:20px">People on LokalTantra work with municipal counsellors to solve </div>
+            <div class="md-caption-1 divCaption1" style="margin-top:10px"> the big and small issues that impact their lives.</div>
+            <div class="md-display-4 divDisplay4" style="margin-top:20px" >21,831 solutions in</div>
+            <div class="md-display-4 divDisplay4" style="margin-top:10px" >196 districts</div>
+          </div>
+          
+        </div>
+
+        <div class="row" style="padding-top:50px;margin-top:80px">
+          <div class="col-sm-3 col-md-3 col-lg-3">
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+          <div ng-controller="PaginationCtrl">
+             <md-content flex>
+              <div class="md-headline divHeading">Our Success Stories</div>
+              <md-list class="back">
+
+                     <md-list-item  class="md-3-line back item"  ng-repeat="item in pagedItems">
+                     <img ng-src="{{item.face}}" alt="{{item.name}}" class="md-card imgList" >
+
+                     <div class="md-list-item-text" style="margin-top:1%">
+                          <a  href="#" class="md-headline" style="font-size: 99%;font-weight: 400;line-height: 160%;"> {{item.headline}}</a>
+                          <h4 style="font-size:73%">{{item.name}}</h4>
+
+                          <p style="color: #000;font-size: 87%;padding-top: 2%;">
+                              {{item.description}}
+                          </p>
+                     </div>
+                     <!--<md-divider inset></md-divider>-->
+                     </md-list-item>
+
+             </md-list>
+
+            </md-content>
+          
+           <button class="btn md-button getStarted" href="#" ng-class="nextPageDisabledClass()" ng-click="loadMore()" style="margin: 10% 10% 10% 30%;">Load More</button>
+          
+         </div>
+          </div>
+
+          <div class="col-sm-3 col-md-3 col-lg-3">
+          </div>
+          
+        </div>
+
+
+
+     <!--Footer begins-->
+     <div class="row">
+              <div class="col-sm-12" style="width:100%; padding-right:0;padding-left:0">
+               <footer class="footer1"  >
+                <div class="container"  >
+                 <div class="row" ><!-- row -->
+                  <div class="col-sm-3 col-md-3 col-lg-3" ><!-- widgets column left -->
+                    <ul class="list-unstyled clear-margins"><!-- widgets -->
+
+                        	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+
+                                <h1 class="title-widget">Useful links</h1>
+
+                                <ul>
+                                	<li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> Terms and Conditions</a></li>
+                                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
+                                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> Representatives</a></li>
+
+                                </ul>
+
+							            </li>
+
+                    </ul>
+
+                  </div>
+
+
+
+                  <div class="col-sm-3 col-lg-3 col-md-3" ><!-- widgets column left -->
+                     <ul class="list-unstyled clear-margins" ><!-- widgets -->
+
+                        	<li class="widget-container widget_nav_menu"><!-- widgets list -->
+
+                                <h1 class="title-widget">Help</h1>
+
+                                <ul>
+                                	<li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Form</a></li>
+                                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> How to youtube</a></li>
+                                  <li><a  href="#"><i class="fa fa-angle-double-right"></i> FAQs</a></li>
+                                </ul>
+
+							            </li>
+
+                    </ul>
+
+
+
+
+                  </div><!-- widgets column left end -->
+
+
+
+                  <div class="col-sm-3 col-lg-3 col-md-3" ><!-- widgets column left -->
+
+
+                  </div><!-- widgets column left end -->
+
+
+                  <div class="col-sm-3 col-lg-3 col-md-3" ><!-- widgets column center -->
+
+
+
+                        <ul class="list-unstyled clear-margins"><!-- widgets -->
+
+                        	<li class="widget-container widget_recent_news"><!-- widgets list -->
+
+                                <h1 class="title-widget">Contact Details </h1>
+
+                                <div class="footerp">
+
+                                <h2 class="title-median">LokalTantra</h2>
+                                <p><b>Email id:</b> <a href="mailto:info@lokaltantra.com">info@lokaltantra.com</a></p>
+                                <p><b>Helpline Numbers </b>
+
+                                 <b style="color:#ffc106;">(8AM to 10PM):</b>  +91-8130890090, +91-8130190010  </p>
+
+                                 <p><b>Corp Office / Postal Address :</b>125, Udyog Vihar, Phase-V, Gurgaon</p>
+                                 <p><b>Phone Numbers : </b>7042827160, </p>
+                                 <p> 011-27568832, 9868387223</p>
+                                </div>
+
+
+                    		</li>
+                          </ul>
+                       </div>
+                </div>
+</div>
+</footer>
+
+
+<div class="footer-bottom">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="copyright">© 2017, LokalTantra, All rights reserved
+				</div>
+
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="design">
+
+					 <a href="#">Franchisee </a> |  <a target="_blank" href="">Web Design & Development by LokalTantra</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+     </div>
+     </div>
+</div>
+       
+    
+
+
+
+     <script src="home.js"></script>
+
+
+   </body>
+</html>
